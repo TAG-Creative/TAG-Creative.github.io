@@ -8,7 +8,7 @@ background-size: cover;
 background-position: top center;
 background-repeat: no-repeat;
 background-attachment: fixed;
-font-family: Raleway-ExtraLight;
+margin: 0;
 }
 
 @font-face {
@@ -16,22 +16,24 @@ font-family: Raleway-ExtraLight;
     src: url(edelsans_ultralight.otf);
 }
 
+@font-face {
+    font-family: edelsans_regular;
+    src: url(edelsans_regular.otf);
+}
 h1 {
     font-family: edelsans_ultralight;
 }
 
 
+.about {
+    background-color: white;
+    font-family: edelsans_regular;  
+}
 
-#imageo {
-    background-image: url(troy.png);
-    width: 100%;
-    height: 100%;
-    position: fixed;
+.about h1 {
+    font-family: edelsans_regular;
+    font-size: 200%;
     text-align: center;
 }
 
-#imageo:hover {
-    background-image: url(troy2.png);
-    text-align: center;
-}
 
