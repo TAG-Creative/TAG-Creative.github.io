@@ -1,6 +1,6 @@
 
 body {
-background-image: url(coming_soon.jpg);
+background-image: url(landing.jpg);
 
 -moz-background-size: cover;
 -webkit-background-size: cover;
@@ -10,6 +10,17 @@ background-repeat: no-repeat;
 background-attachment: fixed;
 font-family: Raleway-ExtraLight;
 }
+
+@font-face {
+    font-family: edelsans_regular;
+    src: url(edelsans_regular.otf);
+}
+
+h1 {
+    font-family: edelsans_regular;
+}
+
+
 
 #imageo {
     background-image: url(troy.png);
