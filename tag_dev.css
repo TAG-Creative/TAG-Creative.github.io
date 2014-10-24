@@ -12,12 +12,12 @@ font-family: Raleway-ExtraLight;
 }
 
 @font-face {
-    font-family: edelsans_regular;
-    src: url(edelsans_regular.otf);
+    font-family: edelsans_light;
+    src: url(edelsans_light.otf);
 }
 
 h1 {
-    font-family: edelsans_regular;
+    font-family: edelsans_light;
 }
 
 
