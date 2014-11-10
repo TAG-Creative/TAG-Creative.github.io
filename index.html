@@ -5,72 +5,43 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <title>TAG (You're It Nigga)</title>
-        <link href="tag_dev.css" rel="stylesheet" type="text/css" />
-        <link rel="shortcut icon" href="favicon.ico" />
-        <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon" target="_top"/>
-        <link rel="icon" href="favicon.ico" type="image/vnd.microsoft.icon" target="_top"/>                
-        <style type="text/css">
-
-        </style>
+        <link href="tag_dev.css" rel="stylesheet" type="text/css" />      
+        <style type="text/css"></style>
+        <script src='scroll.js'></script>
+				<script>
+jQuery(document).ready(function($) {
+ 
+	$(".scroll").click(function(event){		
+		event.preventDefault();
+		$('html,body').animate({scrollTop:$(this.hash).offset().top}, 1400);
+	});
+});
+        </script>
     </head>
     
-    <body>
-        <div class="title">
-            <br/>
-            <h1 style="text-align: Right; font-size: 180%;">Home Work About Contact Services<br /></h1>                      
-            <br/>
-            <br/>
+    <body class="no-touch">
+        <div id="title">
+            <header>
+			<ul>
+	<li><a href="#title" class="scroll">Home</a></li>
+	<li><a href="#work" class="scroll">Work</a></li>
+	<li><a href="#contact" class="scroll">About</a></li>	
+	<li><a href="#contact" class="scroll">Contact</a></li>
+	<li><a href="#contact" class="scroll">Services</a></li>
+	</ul>
+			</header>
+			<div id="logo">
+            <img id="taglogo" src="TAG_logo.png" alt=""/>
+			</div>
+
         </div>
-        <div style="text-align: center;">
-            <img style="max-width:20%; max-height:20%;" src="TAG_logo.png" alt=""/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-        </div>
-        <div class="about">
-            <br/>
-            <br/>
-            <br/>
-            <h1>About NIGGA</h1>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
+        <div id="work">
+            <h1>Work</h1>
+			<div id="content">
+            <img id="content1" src="turkey-wide.jpg"> <br/>
+            <img id="content1" src="turkey-wide.jpg"> <br/>
+            <img id="content1" src="turkey-wide.jpg"> <br/>
+			</div>
         </div>
        
      </body>

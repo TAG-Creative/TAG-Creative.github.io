@@ -1,16 +1,68 @@
 
-body {
-background-image: url(landing.jpg);
-
--moz-background-size: cover;
--webkit-background-size: cover;
-background-size: cover;
-background-position: top center;
-background-repeat: no-repeat;
-background-attachment: fixed;
-margin: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
+div#title {
+background-image: url(landing.jpg);
+width:100vw;
+height:100vh;
+-moz-background-size: cover;
+-webkit-background-size: cover;
+background-size:cover; 
+  background-position:center center; 
+  background-repeat:no-repeat; 
+background-attachment: relative;
+overflow:hidden;
+}
+
+header {
+
+position: fixed;
+width: 100%;
+margin-top: 1em;
+}
+
+
+ul {
+   list-style-type: none;
+   display:inline;
+}
+
+li {
+
+text-decoration: none;
+float: right;
+font-family:edelsans_ultralight;
+font-size: 100%;
+padding-left: 0.5em;
+padding-right: 0.5em;
+display:block;
+color:black;
+border-color: transparent;
+}
+
+a {
+
+color:black;
+text-decoration: none;
+
+}
+
+div#logo {
+text-align: center;
+width:100vw;
+height: 100vh;
+}
+
+img#taglogo {
+
+max-width:50vw; 
+max-height:50vh;
+margin-top: 8%;
+
+}
 @font-face {
     font-family: edelsans_ultralight;
     src: url(edelsans_ultralight.otf);
@@ -19,21 +71,43 @@ margin: 0;
 @font-face {
     font-family: edelsans_regular;
     src: url(edelsans_regular.otf);
+	
 }
+
 h1 {
-    font-family: edelsans_ultralight;
+    font-family:edelsans_regular;
+	text-align: center;
+	padding-top: 2vh;
+	margin-bottom: 0.5em;
 }
 
 
-.about {
-    background-color: white;
-    font-family: edelsans_regular;  
-}
+div#content {
 
-.about h1 {
-    font-family: edelsans_regular;
-    font-size: 200%;
-    text-align: center;
+width: 100%;
+text-align: center;
+
 }
 
 
+img#content1 {
+
+align: center;
+max-width: 80vw;
+height: 22vh;
+margin-top: 3vh;
+margin-bottom: 3vh;
+}
+
+div#work {
+background-color: gray;
+width:100vw;
+height:100vh;
+-moz-background-size: cover;
+-webkit-background-size: cover;
+background-size:cover; 
+  background-position:center center; 
+  background-repeat:no-repeat; 
+background-attachment: relative;
+overflow:hidden;
+}
