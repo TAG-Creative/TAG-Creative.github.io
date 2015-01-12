@@ -1,0 +1,315 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+/*  Fonts and Basic Styling */
+
+@font-face {
+    font-family: edelsans_ultralight;
+    src: url(edelsans_ultralight.otf);
+}
+
+@font-face {
+    font-family: edelsans_regular;
+    src: url(edelsans_regular.otf);
+}
+
+@font-face {
+  font-family: 'Manteka';
+  src: url("Manteka.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  
+  }
+
+/* Scroll HEADER   -----------------------------------------------------------------------------------------------------------SCROLLING RESIZEABLE NAV */
+
+header {
+    width: 100vw;
+    height: 10vh;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-image:none;
+	-moz-background-size: cover;
+-webkit-background-size: cover;
+background-size:cover; 
+  background-position:center center; 
+  background-repeat:no-repeat; 
+background-attachment: relative;
+overflow:hidden;
+    -webkit-transition: height 0.3s;
+    -moz-transition: height 0.3s;
+    -ms-transition: height 0.3s;
+    -o-transition: height 0.3s;
+    transition: height 0.3s;
+}
+
+ul#nav {
+   list-style-type: none;
+   display:inline;
+}
+li#nav {
+   float: right;
+   padding-right: 1em;
+   font-family:Raleway-ExtraLight;
+   font-size: 100%;
+   display:block;
+   color:#FFFFFF;
+   opacity: 0.6;
+}
+ 
+ 
+header h1#logo {
+    display: inline-block;
+    height: 0vh;
+    line-height: 10vh;
+    float: left;
+    font-family: "edelsans_ultralight", sans-serif;
+    font-size: 1vmax;
+    color: #828282;
+    font-weight: 400;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+	margin-top: 2em;
+}
+header nav {
+    display: inline-block;
+    float: right;
+	padding-right: 1em;
+}
+header nav a {
+    line-height: 10vh;
+	font-family: "edelsans_ultralight";
+    color: white;
+    font-weight: 700;
+    font-size: 1.5vmax;
+	padding-right: 0.5em;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+header nav a:hover {
+    color: white;
+}
+header.smaller {
+    height: 4vh;
+	background:rgba(0,0,0,0.8);
+	
+}
+header.smaller h1#logo {
+    width: 50vw;
+    height: 8vh;
+    line-height: 8vh;
+    font-size: 1.5vw;
+}
+header.smaller nav a {
+    line-height: 4vh;
+	font-weight: lighter;
+	font-size: 1.5vw;
+	color: #B2B2B2;
+
+}
+
+header.smaller nav a:hover {
+   color:#FFFFFF;
+   opacity: none;
+
+}
+
+@media all and (max-width: 60px) {
+    header h1#logo {
+        display: block;
+        float: none;
+        margin: 0 auto;
+        height: 100px;
+        line-height: 100px;
+        text-align: center;
+    }
+    header nav {
+        display: block;
+        float: none;
+        height: 50px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    header nav a {
+        line-height: 50px;
+        margin: 0 10px;
+    }
+    header.smaller {
+        height: 75px;
+    }
+    header.smaller h1#logo {
+        height: 40px;
+        line-height: 40px;
+        font-size: 30px;
+    }
+    header.smaller nav {
+        height: 35px;
+    }
+    header.smaller nav a {
+        line-height: 35px;
+    }
+}
+
+
+/*  Landing Page */
+
+div#placeholding {
+width:100vw;
+height:100vh; 
+background-color: #222222;
+-moz-background-size: cover;
+-webkit-background-size: cover;
+background-size:cover; 
+  background-position:center center; 
+  background-repeat:no-repeat; 
+background-attachment: relative;
+}
+
+video#landing {
+padding-top: 6vh;
+width: 100vw;
+overflow: hidden; 
+min-height:90vh; 
+float: left;
+}
+
+div#title {
+
+color: white; 
+font-size: 4.5vw; 
+line-height: 8vmax; 
+float: left; 
+position: absolute; 
+padding-left: 0.5em;
+font-family: 'edelsans_regular'; 
+opacity: 0.8; 
+padding-top: 12vh; 
+letter-spacing:0.7vw;
+}
+
+
+.workheader {
+
+width: 100vw; 
+min-height: 30vh; 
+max-height: 30vh;
+background-color: #222222;
+text-align: center;
+overflow: auto;
+}
+
+.WorkTitle {
+
+font-family: 'Manteka';
+font-size: 5vw;
+padding-top: 3vw;
+overflow: auto;
+color: white;
+opacity: 0.8;
+}
+.aboutheader {
+
+width: 100vw; 
+min-height: 35vh;
+overflow: auto;
+background-color: #222222;
+text-align: center;
+}
+
+.HeaderTitle {
+
+font-family: 'Manteka';
+overflow: auto;
+font-size: 5vw;
+padding-top: 3vh;
+color: white;
+opacity: 0.8;
+
+}
+
+.HeaderSub1 {
+
+font-family: 'edelsans_regular';
+padding-left: 30vw;
+padding-top: 10vh;
+font-size: 2vw;
+color: white;
+float: left;
+opacity: 0.8;
+
+}
+
+.HeaderSub2 {
+
+font-family: 'edelsans_regular';
+padding-right: 30vw;
+padding-top: 10vh;
+font-size: 2vw;
+color: white;
+float: right;
+opacity: 0.8;
+
+}
+
+.HeaderSub3 {
+
+font-family: 'edelsans_ultralight';
+padding-left: 27vw;
+padding-top: 3vh;
+font-size: 2vw;
+color: white;
+float: left;
+opacity: 0.8;
+
+}
+
+.HeaderSub4 {
+
+font-family: 'edelsans_ultralight';
+padding-right: 25vw;
+padding-top: 2.5vh;
+font-size: 2vw;
+color: white;
+float: right;
+opacity: 0.8;
+
+}
+
+div#about_gallery {
+
+width: 100vw;
+z-index: 2;
+}
+
+div#writeup {
+z-index: 30000;
+
+}
+
+#gallery { position: relative;align: center; width:100vw; height:100vh; margin:0; padding:0; }
+#gallery li { display: block; width: 100vw;}
+
+
+
+h1 {
+    font-family: edelsans_ultralight;
+    margin-right: 0; 
+	float: right;
+	font-size: 180%; 
+	padding-top:60vh;
+	padding-right: 2vw;
+}
+
